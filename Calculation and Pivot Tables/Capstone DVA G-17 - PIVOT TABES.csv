@@ -1,0 +1,68 @@
+,Pivot table 1: Default Rate by Credit Grade,,
+,,,
+Grade,COUNT of LoanId,SUM of Default_Flag,AVERAGE of Default_Flag
+A,2403,102,4.24%
+B,4066,376,0.09247417609
+C,4171,678,0.162550947
+D,2382,545,0.2287993283
+E,1243,336,0.270313757
+F,352,115,0.3267045455
+G,82,35,0.4268292683
+Grand Total,14699,2187,0.1487856317
+,,,
+,Pivot table 2: Default Rate by Home Ownership,,
+,,,
+Home,COUNT of LoanId,AVERAGE of Default_Flag,
+MORTGAGE,7300,12.79%,
+OWN,1559,15.33%,
+RENT,5840,17.36%,
+Grand Total,14699,14.88%,
+,,,
+,,,
+,Pivot Table 3: Default Rate by Loan Purpose,,
+,,,
+Reason,COUNT of LoanId,AVERAGE of Default_Flag,
+car,124,12.10%,
+credit_card,3547,12.88%,
+debt_consolidation,8756,15.63%,
+home_improvement,859,15.13%,
+house,46,17.39%,
+major_purchase,259,14.67%,
+medical,134,16.42%,
+moving,87,17.24%,
+other,674,13.80%,
+renewable_energy,11,9.09%,
+small_business,124,23.39%,
+vacation,78,12.82%,
+Grand Total,14699,0.1487856317,
+,,,
+,Pivot table 4: Default Rate by Grade & Home,,
+,,,
+AVERAGE of Default_Flag,Home,,
+Grade,MORTGAGE,OWN,RENT
+A,3.10%,5.43%,5.82%
+B,8.06%,10.98%,10.31%
+C,14.01%,16.48%,18.69%
+D,20.70%,20.33%,26.03%
+E,25.21%,30.16%,28.33%
+F,30.11%,31.71%,36.30%
+G,37.84%,40.00%,48.57%
+,,,
+,,,
+,Pivot table 5: Income Distribution by Risk Category,,
+,,,
+Overall_Risk_Category,AVERAGE of Income,AVERAGE of DebtIncRat,COUNT of LoanId
+HIGH RISK,"35,780",52.485,2.00
+LOW RISK,"82,688",13.4070379,"8,997.00"
+MEDIUM RISK,"62,958",27.35051404,"5,700.00"
+,,,
+,,,
+,Pivot table 6: Average DTI by Status,,
+Status,AVERAGE of DebtIncRat,,
+Charged Off,20.70228624,,
+Current,19.3095374,,
+Default,29.27,,
+Fully Paid,18.008188,,
+In Grace Period,20.01925926,,
+Late (16-30 days),18.30416667,,
+Late (31-120 days),19.78368794,,
