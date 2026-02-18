@@ -1,0 +1,12 @@
+Column Name,Meaning,Raw Data Type,Cleaned Data Type,Example (Raw),Example (Cleaned),Issue Found,Cleaning Action Taken,Formula / Logic Used,Included in Final Analysis (Yes/No)
+loanID,Unique identifier for each loan,Numeric,Numeric,188861,188861,No issue,Retained,Direct copy,Yes
+amount,Loan amount requested,Numeric,Numeric,8000,8000,No issue,Retained,Direct copy,Yes
+grade,Loan risk grade,Text,Text,C,C,No issue,Retained,Direct copy,Yes
+home,Home ownership type,Text,Text,RENT,RENT,Inconsistent capitalization,Standardized text,UPPER(),Yes
+income,Annual income,Numeric,Numeric,49966,49966,No issue,Retained,Direct copy,Yes
+status,Loan repayment status,Text,Text,Charged Off,Charged Off,No issue,Retained,Direct copy,Yes
+DebtIncRat,Debt to income ratio,Numeric,Numeric,30.05,30.05,No issue,Retained,Direct copy,Yes
+Default_Flag,Indicates if loan defaulted,Derived,Numeric (0/1),Charged Off,1,Derived column,Created new feature,"IF(Status='Charged Off',1,0)",Yes
+Income_Bracket,Categorized income group,Derived,Text,49966,Medium,Derived column,Created income brackets,"IF(income<40000,'Low',IF(income<80000,'Medium','High'))",Yes
+Risk_Score,Calculated loan risk score,Derived,Numeric,N/A,13.82,Derived column,Calculated feature,Custom scoring formula,Yes
+Overall_Risk_Category,Final loan risk category,Derived,Text,N/A,HIGH RISK,Derived column,Categorized risk score,"IF(Risk_Score>12,'HIGH RISK',...)",Yes
