@@ -9,6 +9,7 @@ Sector: Banking & Financial Services  |  Group: 17 (Section B)
 
 Faculty/Institute: Newton School of Technology
 
+
 | Team Member | Role |
 | ----- | ----- |
 | **Aditya Mathur** | Project Lead & PPT |
